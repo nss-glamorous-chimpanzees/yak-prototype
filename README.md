@@ -14,6 +14,13 @@
 json-server -p 8088 -w db.json
 ```
 
+1. cd to ./yak-prototype/src
+
+```bash
+npm install
+npm start
+```
+
 ## What's Working/Not Working
 
 ### Working:
