@@ -23,11 +23,4 @@ npm start
 
 ## What's Working/Not Working
 
-### Working:
-
-* Navbar with link to message list
-* List of messages displays with a userName that is a dynamically created link to the user's profile
-
-### Not Working:
-
-* The userID is not being passed correctly to the Profile component, so the component is not rendering.
+It's all working!
