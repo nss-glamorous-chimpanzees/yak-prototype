@@ -10,7 +10,7 @@ class Profile extends Component {
 
     componentDidMount() {
 
-        fetch(`http://localhost:8088/users/${this.props.userId}`)
+        fetch(`http://localhost:8088/users/${this.props.match.params.userId}`)
             .then(response => response.json())
             .then(data => {
                 this.setState({

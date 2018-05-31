@@ -13,7 +13,7 @@ class Message extends Component {
     }
 
     componentDidMount() {
-        
+
         fetch(`http://localhost:8088/posts/${this.props.userId}`)
             .then(response => response.json())
             .then(data => {
@@ -34,13 +34,10 @@ class Message extends Component {
 
     render() {
         return(
-            <Router>
-                <div className="message">
-                    <h3><Link to={`${this.state.userName}`}>{this.state.userName}</Link></h3>
-                    <p>{this.state.content}</p>
-                <Route path={`${this.state.userName}`} component={Profile} userId={this.state.userId} />
-                </div>
-            </Router>
+            <div className="message">
+                <h3><Link to = {`/profile/${this.state.userId}`}> {this.state.userName} </Link></h3>
+                <p>{this.state.content}</p>
+            </div>
         )
     }
 }
